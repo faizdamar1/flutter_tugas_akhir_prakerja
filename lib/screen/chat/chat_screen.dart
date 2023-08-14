@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tugas_akhir_prakerja/model/chat_model.dart';
+import 'package:flutter_tugas_akhir_prakerja/screen/contact/contact_screen.dart';
 import 'package:flutter_tugas_akhir_prakerja/screen/widget/custom_card_chat.dart';
 
 class ChatPage extends StatefulWidget {
@@ -35,8 +36,12 @@ class _ChatPageState extends State<ChatPage> {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.chat),
         onPressed: () {
-          // Navigator.push(context,
-          //     MaterialPageRoute(builder: (builder) => ContactScreen()));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (builder) => const ContactScreen(),
+            ),
+          );
         },
       ),
     );
