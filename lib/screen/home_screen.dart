@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tugas_akhir_prakerja/screen/chat/chat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -88,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen>
         controller: _tabController,
         children: const [
           Center(child: Text("Camera")),
-          Center(child: Text("chat")),
+          ChatPage(),
           Center(child: Text("Status")),
           Center(child: Text("Calls")),
         ],
