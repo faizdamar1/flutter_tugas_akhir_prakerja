@@ -87,10 +87,10 @@ class _HomeScreenState extends State<HomeScreen>
       body: TabBarView(
         controller: _tabController,
         children: const [
-          Text("Camera"),
-          Text("chat"),
-          Text("Status"),
-          Text("Calls"),
+          Center(child: Text("Camera")),
+          Center(child: Text("chat")),
+          Center(child: Text("Status")),
+          Center(child: Text("Calls")),
         ],
       ),
     );
